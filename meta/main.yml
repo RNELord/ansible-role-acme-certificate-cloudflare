@@ -25,4 +25,4 @@ galaxy_info:
 dependencies:
   - role: nephelaiio.plugins
   - role: geerlingguy.repo-epel
-    when: ansible_os_family == 'RedHat'
+    when: ansible_os_family == 'RedHat' and ansible_distribution_major_version != "2023"
